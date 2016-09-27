@@ -16,12 +16,15 @@ app.use(bodyParser.json());
 
 // Pretty prints HTML output
 app.locals.pretty = true;
+
+// "/" route handler
 app.get('/', function (req, res) {
     res.render('index');
 });
+
+// tag route handler
 app.get('/tags/:name.tag', function (req, res) {
     var name = 'tag-' + req.params.name;
-    //res.type('text/plain');
     res.render('../client/' + name);
 });
 

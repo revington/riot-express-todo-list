@@ -1,9 +1,11 @@
-extends main
-
-block body
-	h1 Todo App
-	script(type="riot/tag" src="/tags/todo.tag")
-	script(src="/js/api.js")
-	todo
-	script.
-		riot.mount('todo', todoAPI);
+doctype html
+html
+	head
+		script(src="/js/riot.js")
+	body
+		h1 Todo App
+		script(type="riot/tag" src="/tags/todo.tag")
+		script(src="/js/client.js")
+		todo
+		script.
+			riot.mount('todo', todoAPI);

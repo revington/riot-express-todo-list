@@ -1,0 +1,9 @@
+extends main
+
+block body
+	h1 Todo App
+	script(type="riot/tag" src="/tags/todo.tag")
+	script(src="/js/api.js")
+	todo
+	script.
+		riot.mount('todo', todoAPI);

@@ -1,0 +1,19 @@
+todo
+    style.
+        .completed {
+            text-decoration: line-through;
+        }
+
+    form(onsubmit="{ add }")
+        input(type="text", placeholder="Needs to be done", name="todo")
+    ul
+        li(each="{items}")
+            span \#{id + 1} 
+            span(class="{completed: done}") {title}
+            &nbsp;
+            a(if="{!done}", onclick="{ parent.done }") done
+            a(if="{done}", onclick="{ parent.undone }") undone
+
+    script
+        include tag-todo.js
+

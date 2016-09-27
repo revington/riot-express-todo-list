@@ -1,0 +1,24 @@
+{
+    "ecmaFeatures": {
+        "templateStrings": true,
+        "blockBindings": true
+    },
+    "rules": {
+        "indent": [2, 4],
+        "quotes": [2, "single", "avoid-escape"],
+        "linebreak-style": [2, "unix"],
+        "semi": [2, "always"],
+        "no-console": 0,
+        "no-fallthrough": 0,
+        "vars-on-top": 2,
+        "callback-return": [2, ["callback", "cb", "next"]],
+        "no-new-require": 2,
+        "no-unused-vars": 2
+    },
+    "env": {
+        "node": true,
+        "mocha": true,
+        "es6": true
+    },
+    "extends": "eslint:recommended"
+}
